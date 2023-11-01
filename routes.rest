@@ -1,0 +1,24 @@
+### get the root path /
+ GET http://localhost:3000/ HTTP/1.1
+
+### get all weapons
+ GET http://localhost:3000/weapons HTTP/1.1
+
+### get single weapon
+ GET http://localhost:3000/weapons HTTP/1.1
+
+### create one weapon
+POST http://localhost:3000/weapons HTTP/1.1
+Content-Type: application/json
+
+{
+    "weaponName": "Paul",
+    "rpm": 200,
+    "weaponType": "pwalker@test.com",
+    "capacity": 29,
+    "rarity": "BYU-Idaho"
+}
+### update one weapon
+PATCH http://localhost:3001/weapons HTTP/1.1
+### delete one weapon
+DELETE http://localhost:3001/weapons HTTP/1.1
